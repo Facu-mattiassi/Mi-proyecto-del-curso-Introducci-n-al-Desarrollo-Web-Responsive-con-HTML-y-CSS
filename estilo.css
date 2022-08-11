@@ -1,0 +1,614 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ESTILOS */ 
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+:root {
+    --rojo: #d03b40;
+    --beige: #ded6c0;
+    --blanco: #f5f0ed;
+    --gris: #241d1b;
+    --negro: #251D1B;
+
+    --t-claro: #f5f0ed;
+    --t-oscuro: #3c3c3b;
+    
+    /* TAMAÑOS */
+    --n1: 44px;
+    --n2: 28px;
+    --n3: 24px;
+    --t: 16px;
+    --boton: 14px;
+
+    --n1m: 30px;
+    --n2m: 24px;
+    --n3m: 24px;
+    --tm: 16px;
+    --botonm: 14px;
+}
+
+@media screen and (max-width: 749.99px) {
+
+    
+
+    .brunch, .dondeEstamos {
+        background-color: var(--rojo);
+        height: 270px;
+        text-align: center;
+    }
+    
+    .celebra, .contacta {
+        background-color: var(--beige);
+        height: 270px;
+        text-align: center;
+    }
+    
+    .cuatro {
+        background-color: var(--blanco);
+    }
+    
+    footer {
+        background-color: var(--negro);
+    }
+    
+    .recienHecho {
+        background-image: url(/Img/Fondo1_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .nav {
+        display: block;
+        height: 100px;
+    }
+    .logo {
+        float: left;
+        margin-left: 16px;
+        margin-top: 16px;
+    }
+    
+    .icono {
+        position: relative;
+        top: 28px;
+        height: 27px;
+        width: 44px;
+        background-color: var(--rojo);
+        padding: 8.5px 0px 8.5px 0px;
+        margin-left: auto;
+        margin-right: 16px;
+    }
+    
+    .barra {
+        height: 5px;
+        margin: 3px 5px;
+        width: 34px;
+        background-color: var(--beige);
+        border-radius: 50px;
+    }
+    
+    .items {
+        display: none;
+    }
+    
+    
+    .n1 {
+        max-width: 288px;
+        min-width: 279px;
+        display: inline-block;
+        font-size: var(--n1m);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 21px;
+    }
+    
+    .divisoria {
+        width: 88px;
+        height: 2px;
+        background-color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-bottom: 21px;
+    }
+    
+    .texto {
+        color: var(--blanco);
+        font-size: 16px;
+        margin: 0px 16px;
+        line-height: 22px;
+    }
+    
+    .n2 {
+        max-width: 280px;
+        min-width: 279px;
+        display: inline-block;
+        font-size: var(--n2m);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-top: 48px;
+        margin-bottom: 21px;
+    }
+    
+    .span-red {
+        color: var(--rojo);
+    }
+    
+    .ven {
+        height: 405px;
+        background-image: url(/Img/Fondo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 19%;
+        text-align: center;
+    }
+    
+    .ven .n1 {
+        margin-top: 63px;
+        margin-bottom: 25;
+    }
+    
+    .ven .divisoria {
+        margin-bottom: 29px;
+    }
+    
+    .ven .texto {
+        margin-bottom: 32px;
+    }
+    
+    .boton {
+        background-color: transparent;
+        border:  2px solid var(--blanco);
+        color: var(--blanco);
+        height: 48px;
+        width: 282px;
+    }
+    
+    .cuatro {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+    
+    .cuatro .card .img img {
+        width: 80px;
+        height: 80px;
+    }
+    .img {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        background-size: contain;
+    }
+    
+    .card {
+        padding-top: 48px;
+        margin: 0px 16px;
+    }
+    
+    .texto-card {
+        color: var(--gris);
+        text-align: left;
+        margin-top: 8px;
+        line-height: 22px;
+        font-weight: 100;
+    }
+    
+    .texto-card-titulo {
+        font-weight: 800;
+        font-size: 24px;
+    }
+    
+    .contacta .n2 {
+        color: var(--rojo);
+        line-height: 22px;
+    }
+    
+    .contacta .n2, .contacta .texto {
+        color: var(--rojo);
+        line-height: 22px;
+    }
+    
+    .dondeEstamos .n2, .dondeEstamos .texto {
+        color: var(--beige);
+        line-height: 30px;
+    }
+    
+    .dondeEstamos .texto {
+        margin-top: 28px;
+        line-height: 22px;
+    }
+    
+    .footer {
+        height: 106px;
+        margin: auto 0px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    .brunch, .dondeEstamos {
+        background-color: var(--rojo);
+        height: 270px;
+        text-align: center;
+    }
+    
+    .celebra, .contacta {
+        background-color: var(--beige);
+        height: 270px;
+        text-align: center;
+    }
+    
+    .cuatro {
+        background-color: var(--blanco);
+    }
+    
+    footer {
+        background-color: var(--negro);
+    }
+    
+    .recienHecho {
+        background-image: url(/Img/Fondo1_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .nav {
+        display: block;
+        height: 100px;
+    }
+
+    .logo {
+        float: left;
+        margin-left: 24px;
+        margin-top: 16px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: 8px;
+    }
+    
+    .icono {
+        display: none;
+        position: relative;
+        top: 28px;
+        height: 27px;
+        width: 44px;
+        background-color: var(--rojo);
+        padding: 8.5px 0px 8.5px 0px;
+        margin-left: auto;
+        margin-right: 16px;
+    }
+    
+    .barra {
+        height: 5px;
+        margin: 3px 5px;
+        width: 34px;
+        background-color: var(--beige);
+        border-radius: 50px;
+    }
+    
+    .items {
+        display: inline-block;  
+    }
+
+    .item {
+        display: inline;
+        margin-left: auto;
+        margin-right: 16px;
+        color: var(--blanco);
+        font-size: var(--t);
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .n1 {
+        max-width: 370px;
+        min-width: 279px;
+        display: inline-block;
+        font-size: var(--n1);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 21px;
+    }
+
+    .recienHecho .n1 {
+        margin-top: 100px;
+    }
+    
+    .divisoria {
+        width: 88px;
+        height: 2px;
+        background-color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .texto {
+        color: var(--blanco);
+        font-size: 16px;
+        margin: 0px auto;
+        line-height: 22px;
+        max-width: 520px;
+    }
+    
+    .brunch, .celebra {
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+
+    .brunch .n2, .celebra .n2 {
+        margin-top: 120px;
+        margin-bottom: 16;
+        width: 320px;
+    }
+
+    .brunch .texto, .celebra .texto {
+        max-width: 420px;
+        margin: 0px auto;
+    }
+
+    .n2 {
+        max-width: 320px;
+        min-width: 279px;
+        display: inline-block;
+        font-size: var(--n2);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--blanco);
+        text-align: center;
+        margin: auto;
+        margin-top: 48px;
+        margin-bottom: 21px;
+    }
+    
+    .span-red {
+        color: var(--rojo);
+        width: 320px;
+    }
+    
+    .ven {
+        margin-top: 400px;
+        height: 550px;
+        background-image: url(/Img/Fondo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 19%;
+        text-align: center;
+    }
+    
+    .ven .n1 {
+        max-width: max-content;
+        margin-top: 148px;
+        margin-bottom: 16px;
+    }
+    
+    .ven .divisoria {
+        margin-bottom: 32px;
+    }
+    
+    .ven .texto {
+        margin-bottom: 35px;
+    }
+    
+    .boton {
+        background-color: transparent;
+        border:  2px solid var(--blanco);
+        color: var(--blanco);
+        height: 48px;
+        width: 282px;
+    }
+    
+    .cuatro {
+        text-align: center;
+        padding-bottom: 48px;
+        overflow: auto;
+    }
+
+    .fila-uno, .fila-dos {
+        overflow: auto;
+    }
+    
+    .cuatro .card .img img {
+        width: 173px;
+        height: 173px;
+    }
+
+    .img {
+        float: left;
+        width: 173px;
+        height: 173px;
+        margin: auto;
+        background-size: contain;
+    }
+    
+    .card {
+        float: left;
+        padding-top: 48px;
+        margin: 0px 2.5%;
+        width: 45%;
+        height: 50%;
+    }
+    
+    .texto-card {
+        width: 50%;
+        float: left;
+        color: var(--gris);
+        text-align: left;
+        margin-left: 24px;
+        line-height: 22px;
+        font-weight: 100;
+    }
+    
+    .texto-card-titulo {
+        font-weight: 800;
+        font-size: 24px;
+    }
+    
+    .contacta, .dondeEstamos {
+        float:left;
+        width: 50%;
+        height: 402px;
+    }
+    
+    .contacta .n2 {
+        color: var(--rojo);
+        line-height: 33px;
+        margin-top: 124px;
+    }
+    
+    .contacta .texto{
+        color: var(--rojo);
+        line-height: 22px;
+    }
+    
+    .dondeEstamos .n2 {
+        margin-top: 124px;
+    }
+
+    .dondeEstamos .n2, .dondeEstamos .texto{
+        color: var(--beige);
+        line-height: 30px;
+    }
+    
+    .dondeEstamos .texto {
+        margin-top: 23px;
+        line-height: 22px;
+    }
+
+    .contacta .texto {
+        margin-top: 23px;
+    }
+
+    .contacta .texto, .dondeEstamos .texto {
+        width: 350px;
+    }
+
+    .contacta .n2, .dondeEstamos .n2 {
+        margin-left: 16px;
+        margin-right: 16px;
+        max-width: 400px;
+    }
+    
+    .footer {
+        height: 106px;
+        margin: 402px 0 0 0;
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+
+    .footer .texto {
+        text-align: left;
+        margin-left: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) and (min-width: 749.99px) {
+
+    .card {
+        text-align: center;
+        padding-top: 48px;
+        margin: 0px 2.5%;
+        width: 45%;
+    }
+
+    .cuatro .card .img img {
+        width: 173px;
+        height: 173px;
+    }
+    
+    .img {
+        width: 100%;
+        height: 173px;
+        margin: 0px auto;
+        background-size: contain;
+    }
+    
+    .texto-card {
+        width: 100%;
+        margin-left: 0px;
+        color: var(--gris);
+        text-align: left;
+        margin-top: 16px;
+        line-height: 22px;
+        font-weight: 100;
+    }
+    
+    .texto-card-titulo {
+        font-weight: 800;
+        font-size: 24px;
+    }
+}
+
